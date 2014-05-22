@@ -43,7 +43,7 @@ cacheSolve <- function(x, ...) {
         message("getting cached data for matrix inverse")
         return(m)
     }
-    ## if there is note value for inverse, then it calculates the inverse Matrix
+    ## if there isn't value for inverse, then it calculates the inverse Matrix
     data <- x$get()
     m <- solve(data)
     x$setinverse(m)
